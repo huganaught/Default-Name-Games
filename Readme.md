@@ -3,7 +3,7 @@
 
 
 ## Setting up the Development Environment
-Currently Included are only assets can be copied into an existing Unity 5 project.
+Currently included are only assets can be copied into an existing Unity 5 project.
 
 
 ## Licence
