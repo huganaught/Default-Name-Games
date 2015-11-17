@@ -13,7 +13,7 @@
 - shop menu
 - quickplay manager
 - main menu [marc]
-- parralax
+- parallaxing
 - camera controls
 - force calculator [hugo]
 - connect 4 ai
