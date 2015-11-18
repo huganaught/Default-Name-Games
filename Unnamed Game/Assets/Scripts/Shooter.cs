@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Shooter : MonoBehaviour {
 
+// From old game: shoots a raycast to the cursor when clicked. (can be used to set the agnle?)
+
 	public float fireRate = 0;
 	public float Damage = 10;
 	public LayerMask whatToHit;
@@ -21,7 +23,7 @@ public class Shooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (fireRate == 0) {
-			if (Input.GetButtonDown ("Fire1")) {
+			if (Input.GetButtonDown ("Fire1")) { // Unity project buttons
 				Shoot();
 			}
 		}
