@@ -7,16 +7,16 @@
 - terrain generation
 - terrain destruction
 - ammo manager
-- shooting [marc]
+- shooting (review old code,adapt) [70%]
 - token detection
-- player movment (fuel based) [marc]
+- player movment (add fuel based, work on touch input) [90%]
 - shop menu
 - quickplay manager
-- main menu [marc]
+- main menu (needs graphics, links to scences) [30%]
 - parallaxing
 - camera controls
-- force calculator [hugo]
-- connect 4 ai
+- force calculator [??%]
+- connect 4 ai (old ti-basic algorithm, adapt) [70%]
 - pause menu
 - adventure generation
 - adventure tracker
@@ -27,10 +27,11 @@
 
 ### Graphics
 - default button ui
+- fix human arm (seprate entity for rotation >>)
 - fix catapult arm
-- fix human arm
+- fix tank cannon
 - more character options
-- more backgrounds
+- more backgrounds (2 layers)
 - animated prefabs
 - particle prefabs
 - fix font
