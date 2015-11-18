@@ -15,7 +15,7 @@
 - main menu (needs graphics, links to scences) [30%]
 - parallaxing
 - camera controls
-- force calculator [??%]
+- targeting calculator (bugs) [75%]
 - connect 4 ai (old ti-basic algorithm, adapt) [70%]
 - pause menu
 - adventure generation
