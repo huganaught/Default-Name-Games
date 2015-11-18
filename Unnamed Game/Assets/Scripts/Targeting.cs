@@ -13,12 +13,20 @@ public class Targeting : MonoBehaviour {
 		if (theta == 180){
 			theta = 180.0000001;
 		}
-		
+		// Component vel. format maybe need for Unity vector forces
 		float xVi = sqrt((G*x)/(sin(2*theta))); // Initial Velocity in x-axis // ERROR-sqrt & sin functions in c#? replace G with game gravity constant
 		float yVi = sqrt((2*G*y)/(sin(theta)^2)); // Initial Velocity in y-axis
 		float totalVi = sqrt(xVi^2 + yVi^2); // Total Velocity along theta
 		return {totalVi, theta};
-		/* // If needed... without physics engine; time independent
+	}
+	
+	/*
+	
+	*/
+	
+	
+	
+	/* // If needed... motion without physics engine; time independent
 		x = xV + x; // Calculates next position x-axis constant vel. can change if (wind) applied like gravity
 		xV = xVi + someForce;
 		y = yV + y;
@@ -26,5 +34,4 @@ public class Targeting : MonoBehaviour {
 		
 		object(x,y); // Where object would now be
 		*/
-	}
 
