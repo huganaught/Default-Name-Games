@@ -1,5 +1,5 @@
 ## Unnamed Game
-.. is a mobile unity game which mixes Tank and Connect 4. 
+.. is a mobile unity game which mixes Tanks and Connect 4. 
 
 
 ## Setting up the Development Environment
