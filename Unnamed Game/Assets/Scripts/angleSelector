@@ -1,0 +1,39 @@
+using UnityEngine;
+using System.Collections;
+
+public class angleSelector : MonoBehaviour {
+
+// used to detect angle from a touch
+
+	public float fireAngle= 45; // default angle is 45 degrees
+  private bool isClicked = false;  
+  
+  void Init()
+  {
+  if(GUI.Button(angleButtonPosition, angleButtonIcon)
+        isClicked = true;    //triggered if change angle button is pressed
+  }
+	
+	// Update is called once per frame
+	void Update () {
+		if (isClicked) { //if the change angle button is pressed - or if they touch the tank itself?
+		    changeAngle();
+			}
+	}
+	
+	void changeAngle(){
+	 float[] TargetManager (int x, int y){  // Input xy distance from launch
+		float theta = Math.Atan((2*y)/(x/2)))*(180/Math.PI); // Angle to theoretical arc peak so projectivle has -vel. when hitting taget // Atan- fixed
+		if (theta == 0){
+			theta = .00000001; // Needs to be divided by later can't be 0 w/o error // ERROR-curently a hotfix
+		}
+		if (theta == 180){
+			theta = 180.0000001;
+		}
+		// Component vel. format maybe need for Unity vector forces
+		float xVi = sqrt((G*x)/(sin(2*theta))); // Initial Velocity in x-axis // ERROR-sqrt & sin functions in c#? replace G with game gravity constant
+		float yVi = sqrt((2*G*y)/(sin(theta)^2)); // Initial Velocity in y-axis
+		float totalVi = sqrt(xVi^2 + yVi^2); // Total Velocity along theta
+		fireAngle = theta;
+		
+}
