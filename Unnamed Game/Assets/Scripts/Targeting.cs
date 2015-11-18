@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Targeting : MonoBehaviour {
 
-//Not Run-able ATM conept
+//Not Run-able ATM concept
 
 	float[] TargetManager (int x, int y){  //input xy distance from launch
 		float theta = atand((2*y)/(x/2))); // Angle to theoretical arc peak so projectivle has -vel. when hitting taget // ERROR-whats arc tan?
